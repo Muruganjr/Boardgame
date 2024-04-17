@@ -117,18 +117,20 @@
 	</build>
 
 	
-             <distributionManagement>
-    <repository>
-      <id>maven-releases</id>
-      <name>maven-releases</name>
-      <url>http://13.200.237.95:8081/repository/maven-releases/</url>
-    </repository>
-    <snapshotRepository>
-      <id>maven-snapshots</id>
-      <name>maven-snapshots</name>
-      <url>http://13.200.237.95:8081/repository/maven-snapshots/</url>
-    </snapshotRepository>
-</distributionManagement>
-	
+ <project>
+    <!-- Other elements of your POM -->
 
+    <distributionManagement>
+        <repository>
+            <id>maven-releases</id>
+            <url>http://13.200.237.95:8081/repository/maven-releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>maven-snapshots</id>
+            <url>http://13.200.237.95:8081/repository/maven-snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
+
+    <!-- Other elements of your POM -->
 </project>
+
